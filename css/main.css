@@ -1,5 +1,6 @@
 body{
 	margin: 0;
+	position: relative;
 }
 #bloqueIzquierda{
 	position: fixed;
@@ -7,22 +8,18 @@ body{
 	top: 0;
 	width: 80px;
 	height: 663px;
-	background-color: black;
+	background-color: darkgray;
 	
 }
-#imgInicio{
-	background-image: url(../img/manos.gif);
-	background-size: 100% 520px;
-	width: 100%;
-	height: 520px;
-	position: absolute;
+#video{
+	position: relative;
+	right: 0;
 }
 #titulo{
 	position: absolute;
 	top: 40%;
 	left: 38%;
-	background-color: aqua;
+	background-color: white;
 	padding: 50px 100px;
 	opacity: 0.5;
-	
 }
