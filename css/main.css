@@ -1,25 +1,35 @@
 body{
-	margin: 0;
-	position: relative;
+	margin: 0 auto;
+	box-sizing: border-box;
+	text-align: center;
 }
+
 #bloqueIzquierda{
 	position: fixed;
-	left: 0;
-	top: 0;
-	width: 80px;
-	height: 663px;
-	background-color: darkgray;
+    top: 0;
+    height: 100%;
+    z-index: 70;
+    background-color: white;
 	
 }
-#video{
-	position: relative;
-	right: 0;
+#logo{
+	 transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
 }
-#titulo{
-	position: absolute;
-	top: 40%;
-	left: 38%;
-	background-color: white;
-	padding: 50px 100px;
-	opacity: 0.5;
+.img{
+	max-width:100%; 
+	height: 200px;	
+	display: flex;
+}
+#frase{
+	font-size: 30px;
+}
+.no{
+	display: none;
+}
+.si{
+	display: block;
+}
+.frase  {
+	padding: 20%;
 }
