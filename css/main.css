@@ -79,7 +79,31 @@ body{
 	background-image: url(../img/runwild.jpg);
 }
 
+.img{
+	max-width:100%; 
+	height: 200px;	
+	display: flex;
+}
+#frase{
+	font-size: 95px;
+}
+.no{
+	display: none;
+}
+.si{
+	display: block;
+}
+.frase  {
+	padding:10% 80px;
+	font-family: "Bangers";
+}
+
+
 /*formulario*/
+.seccion-formulario{
+	margin-top: 60px;
+}
+
 form{
 	margin: 123px auto;
 	width: 350px;
@@ -87,6 +111,37 @@ form{
     padding: 35px;
     border-radius: 10px;
     text-align: center;
+	font-family: "Arial";
+}
+
+.inputs-form {
+	padding: 7px;
+    border-radius: 5px;
+    border: none;
+    width: 230px;
+    margin: 16px auto;
+    display: block;
+    height: 25px;
+}
+
+#textarea-form{
+	padding: 7px;
+    border-radius: 5px;
+    border: none;
+    width: 230px;
+    margin: 16px auto;
+    display: block;
+	font-family: "Arial";
+}
+
+#titulo-form-contacto {
+	color: white;
+    font-size: 44px;
+}
+
+/*Alertas de Error*/
+.input-box {
+  position: relative;
 }
 
 .inputs-form {
@@ -107,6 +162,7 @@ form{
     margin: 16px auto;
     display: block;
 }
+
 #boton {
 	background: rgba(3, 107, 158, 0.90);
     color: white;
@@ -117,26 +173,36 @@ form{
     border: none;
     border-radius: 3px;
     font-size: 16px;
+	font-family: "Arial";
 
 }
 #titulo-form-contacto {
 	color: white;
     font-size: 44px;
 }
-/*Alertas de Error*/
-.input-box {
-  position: relative;
-}
-.input-box span{
+
+.mostrar{
   display: block;
   background-color: rgba(51,51,51,0.8);
   padding: 5px;
   position: absolute;
-  left: 105%;
+  left: 88%;
   top: 8px;
   width: 200px;
   color: white;
 }
+
+.ocultar{
+  display: none;
+  background-color: rgba(51,51,51,0.8);
+  padding: 5px;
+  position: absolute;
+  left: 88%;
+  top: 8px;
+  width: 200px;
+  color: white;
+}
+
 .input-box span:after {
   content: "";
   width: 0;
@@ -147,32 +213,4 @@ form{
   position: absolute;
   right: 100%;
   top: 10px;
-}
-.error {
-  width  : 100%;
-  padding: 0; 
-  font-size: 80%;
-  color: white;
-  background-color: #900;
-  border-radius: 0 0 5px 5px;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.img{
-	max-width:100%; 
-	height: 200px;	
-	display: flex;
-}
-#frase{
-	font-size: 95px;
-}
-.no{
-	display: none;
-}
-.si{
-	display: block;
-}
-.frase  {
-	padding:10% 80px;
-	font-family: "Bangers";
 }

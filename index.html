@@ -3,8 +3,8 @@
     <head>
         <title></title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/grid.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
         <div id="parteDerecha">
@@ -94,15 +94,27 @@
                     </div>
                 </div>
             </div>
-			<section id="formulario">
-            <form id="contacto-form"> 
-                <h2 id="titulo-form-contacto">Contáctanos</h2>
-                <input id="input-form1" class= "inputs-form" type="text" placeholder="Nombre"/> 
-                <input id="input-form2" class= "inputs-form" type="email" name="email" placeholder="xxxx@xxxx.xxx"/> 
-                <textarea id="textarea-form" name="message" cols="40" rows="6" placeholder="Escribe tu mensaje..."></textarea> 
-                <button id ="boton" type="submit">Enviar mensaje</button>  
-            </form>
-        </section>
+        <div class="col-offset-12">
+            
+            <section id="formulario">
+                <form id="contacto-form"> 
+                    <h2 id="titulo-form-contacto">Contáctanos</h2>
+                    <div class="input-box">
+                        <span class= "ocultar" id="mensaje-error-nombre"></span>
+                        <input id="input-form1" class= "inputs-form" type="text" placeholder="Nombre"/> 
+                    </div>
+                    <div  class="input-box">
+                        <span class= "ocultar" id="mensaje-error-correo"></span>
+                        <input id="input-form2" class= "inputs-form" type="email" name="email" placeholder="xxxx@xxxx.xxx"/> 
+                    </div>
+                    <div  class="input-box">
+                        <span class= "ocultar" id="mensaje-error-texto"></span>
+                        <textarea id="textarea-form" name="message" cols="40" rows="6" placeholder="Escribe tu mensaje..."></textarea> 
+                    </div>
+                    <button id ="boton" type="submit">Enviar mensaje</button>  
+                </form>
+            </section>
+        </div>
         </div>
             <div id="bloqueIzquierda">
                 <img id="logo" src="img/logo.png">
