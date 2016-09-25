@@ -61,9 +61,7 @@ window.addEventListener("load", function(){
 				cuadroNegro.appendChild(cuadroDeValidacionNombre);
 				cuadroDeValidacionNombre.innerHTML = "<strong>Completar los campos</strong>";
 				cuadroNegro.classList.add("error");*/
-				
 				alert("Llenar campo nombre de forma correcta");
-
 			};
 
 			if (campoObliInputDos.value == null || campoObliInputDos.value == 0 || /^\s+$/.test(campoObliInputDos.value) ) {
