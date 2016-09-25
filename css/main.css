@@ -1,6 +1,11 @@
+@import 'https://fonts.googleapis.com/css?family=Bangers';
 body{
 	margin: 0;
 	position: relative;
+}
+#parteDerecha{
+	width: 100%;
+	margin-left: 80px;
 }
 #bloqueIzquierda{
 	position: fixed;
@@ -8,18 +13,165 @@ body{
 	top: 0;
 	width: 80px;
 	height: 663px;
-	background-color: darkgray;
-	
+	background-color: white;
+}
+#logo{
+	transform:rotate(270deg);
+	position: absolute;
+	width: 250px;
+	height: 80px;
+	top:40%;
+	left:-85px;
 }
 #video{
 	position: relative;
 	right: 0;
 }
-#titulo{
+/*Parte de discos*/
+#drop{
+	border-radius: 50%;
+	width: 220px;
+	height: 220px;
+	background-color: black;
+	position: relative;
+	margin: 0 auto;
+	border:13px solid aquamarine;
+	margin-bottom: 30px;
+}
+#seccionPrimera{
+	text-align: center;
+	padding: 100px 0;
+	background-color: black;
+}
+#drop p{
+	color: aquamarine;
+	font-size: 40px;
+	word-wrap: break-word;
 	position: absolute;
-	top: 40%;
-	left: 38%;
-	background-color: white;
-	padding: 50px 100px;
-	opacity: 0.5;
+	font-family: "Bangers";
+	text-align: center;
+	top: 80px;
+}
+.discos{
+	background-size: 200px 200px;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 10px;
+}
+#drag1{
+	background-image: url(../img/heymama.jpg);
+}
+#drag2{
+	background-image: url(../img/bangarang.jpg);
+}
+#drag3{
+	background-image: url(../img/familyguy.jpg);
+}
+#drag4{
+	background-image: url(../img/toulouse.jpg);
+}
+#drag5{
+	background-image: url(../img/winterbreak.jpg);
+}
+#drag6{
+	background-image: url(../img/runwild.jpg);
+}
+/*formulario*/
+form{
+	margin: 123px auto;
+	width: 350px;
+	background: rgba(0, 0, 0, 0.60); 
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.inputs-form {
+	padding: 7px;
+    border-radius: 5px;
+    border: none;
+    width: 230px;
+    margin: 16px auto;
+    display: block;
+    height: 25px;
+}
+
+#textarea-form{
+	padding: 7px;
+    border-radius: 5px;
+    border: none;
+    width: 230px;
+    margin: 16px auto;
+    display: block;
+}
+#boton {
+	background: rgba(3, 107, 158, 0.90);
+    color: white;
+    padding: 14px 21px;
+    width: 240px;
+    margin: 12px auto;
+    display: block;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+
+}
+#titulo-form-contacto {
+	color: white;
+    font-size: 44px;
+}
+/*Alertas de Error*/
+.input-box {
+  position: relative;
+}
+.input-box span{
+  display: block;
+  background-color: rgba(51,51,51,0.8);
+  padding: 5px;
+  position: absolute;
+  left: 105%;
+  top: 8px;
+  width: 200px;
+  color: white;
+}
+.input-box span:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid rgba(51,51,51,0.8);
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  right: 100%;
+  top: 10px;
+}
+.error {
+  width  : 100%;
+  padding: 0; 
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.img{
+	max-width:100%; 
+	height: 200px;	
+	display: flex;
+}
+#frase{
+	font-size: 95px;
+}
+.no{
+	display: none;
+}
+.si{
+	display: block;
+}
+.frase  {
+	padding:10% 80px;
+	font-family: "Bangers";
 }

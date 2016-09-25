@@ -1,14 +1,113 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
     <head>
-        <title></title>
+        <title>CHIRCHOLOCO</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
     </head>
     <body>
-		<video id="video" src="img/tomorrowland.mp4" autoplay loop="img/tomorrowland.mp4" width="100%" muted ></video>
-        <div id="titulo">MUSIC</div>
-		<div id="bloqueIzquierda"></div>
-        <script src="js/app.js"></script>
+        <div id="parteDerecha">
+			<div class="container-fluid">
+            <div class="row">
+                <video id="video" src="img/tomorrowland.mp4" autoplay loop="img/tomorrowland.mp4" width="100%" muted ></video>
+            </div>
+            <div class="row frase">
+                <h2 id="frase" > Entretenimiento en música..</h2>
+            </div>
+            <div id="imagenes">
+                <div class="row" id="bloque">
+                     <div class="col-3">
+                         <img src="img/carlcox2.jpg" alt="" class="img">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/david.jpg" alt="" class="img">
+                    </div>
+                    <div class="col-3">
+                         <img src="img/carlcox.png" alt="" class="img">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/locodice.jpg" alt="" class="img">
+                    </div>
+                </div>
+                 <div class="row no" id="bloque2">
+                    <div class="col-3">
+                        <img src="img/nickyr.jpg" alt="" class="img">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/nn.jpg" alt="" class="img">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/scrillex.jpg" alt="" class="img">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/locodice.jpg" alt="" class="img">
+                    </div>
+                </div>
+                <div class="row" id="bloque3">
+                    <div class="col-3">
+                        <img src="img/nickyr.jpg" alt="" class="img">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/nn.jpg" alt="" class="img">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/scrillex.jpg" alt="" class="img">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/locodice.jpg" alt="" class="img">
+                    </div>
+                </div> 
+                 <div class="row no" id="bloque4">
+                     <div class="col-3">
+                         <img src="img/carlcox2.jpg" alt="" class="img">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/david.jpg" alt="" class="img">
+                    </div>
+                    <div class="col-3">
+                         <img src="img/carlcox.png" alt="" class="img">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/locodice.jpg" alt="" class="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div id="seccionPrimera" class="col-offset-12">
+                <div id="drop">
+                    <p id="parrafo">Arrastra tu canción</p>
+                </div>
+                <div class="row">
+                    <div class="col-offset-12">
+                        <div class="discos" id="drag1" draggable="true"></div>
+                        <div class="discos" id="drag2" draggable="true"></div>
+                        <div class="discos" id="drag3" draggable="true"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-offset-12">
+                        <div class="discos" id="drag4" draggable="true"></div>
+                        <div class="discos" id="drag5" draggable="true"></div>
+                        <div class="discos" id="drag6" draggable="true"></div>
+                    </div>
+                </div>
+            </div>
+			<section id="formulario">
+            <form id="contacto-form"> 
+                <h2 id="titulo-form-contacto">Contáctanos</h2>
+                <input id="input-form1" class= "inputs-form" type="text" placeholder="Nombre"/> 
+                <input id="input-form2" class= "inputs-form" type="email" name="email" placeholder="xxxx@xxxx.xxx"/> 
+                <textarea id="textarea-form" name="message" cols="40" rows="6" placeholder="Escribe tu mensaje..."></textarea> 
+                <button id ="boton" type="submit">Enviar mensaje</button>  
+            </form>
+        </section>
+        </div>
+            <div id="bloqueIzquierda">
+                <img id="logo" src="img/logo.png">
+            </div>
+            <script src="js/app.js"></script>
+            <script src="js/dragdrop.js"></script>
+            <script src="js/musica.js"></script>
     </body>
 </html>
