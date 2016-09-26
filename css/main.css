@@ -98,10 +98,11 @@ body{
 	font-family: "Bangers";
 }
 /*formulario*/
-.seccion-formulario{
-	margin-top: 60px;
+#formulario{
+	background-image: url(../img/imgform.jpg);
+	background-size: 100% auto;
+	padding: 20px 0;
 }
-
 form{
 	margin: 123px auto;
 	width: 350px;
