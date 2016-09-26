@@ -98,10 +98,11 @@ body{
 	font-family: "Bangers";
 }
 /*formulario*/
-.seccion-formulario{
-	margin-top: 60px;
+#formulario{
+	background-image: url(../img/imgform.jpg);
+	background-size: 100% auto;
+	padding: 20px 0;
 }
-
 form{
 	margin: 123px auto;
 	width: 350px;
@@ -111,7 +112,6 @@ form{
     text-align: center;
 	font-family: "Arial";
 }
-
 .inputs-form {
 	padding: 7px;
     border-radius: 5px;
@@ -121,7 +121,6 @@ form{
     display: block;
     height: 25px;
 }
-
 #textarea-form{
 	padding: 7px;
     border-radius: 5px;
@@ -131,7 +130,6 @@ form{
     display: block;
 	font-family: "Arial";
 }
-
 #titulo-form-contacto {
 	color: white;
     font-size: 44px;
@@ -151,7 +149,6 @@ form{
     display: block;
     height: 25px;
 }
-
 #textarea-form{
 	padding: 7px;
     border-radius: 5px;
@@ -160,7 +157,6 @@ form{
     margin: 16px auto;
     display: block;
 }
-
 #boton {
 	background: rgba(3, 107, 158, 0.90);
     color: white;
@@ -178,7 +174,6 @@ form{
 	color: white;
     font-size: 44px;
 }
-
 .mostrar{
   display: block;
   background-color: rgba(51,51,51,0.8);
@@ -189,7 +184,6 @@ form{
   width: 200px;
   color: white;
 }
-
 .ocultar{
   display: none;
   background-color: rgba(51,51,51,0.8);
@@ -200,7 +194,6 @@ form{
   width: 200px;
   color: white;
 }
-
 .input-box span:after {
   content: "";
   width: 0;
