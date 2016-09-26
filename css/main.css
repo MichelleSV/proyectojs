@@ -212,3 +212,6 @@ form{
   right: 100%;
   top: 10px;
 }
+.hidden{
+	display: none;
+}

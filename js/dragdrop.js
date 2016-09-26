@@ -16,7 +16,10 @@ function DragDrop(drag, drop){
 		e.target.appendChild(document.getElementById(id));
 		var parrafo = document.getElementById("parrafo");
 		parrafo.style.display="none";
-		
+		var reproductor = document.getElementById("reproductor");
+			reproductor.src = "audio/" + id + ".mp3";
+			reproductor.load();
+			reproductor.play();
     }
 };
 	DragDrop("drag1", "drop");
